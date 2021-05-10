@@ -1,23 +1,120 @@
 @font-face {
   font-family: "Roboto-bold";
-  src: url("fonts/Roboto-Bold.ttf");
+  src: url("../../fonts/Roboto-Bold.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("fonts/Roboto-Regular.ttf");
+  src: url("../../fonts/Roboto-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("fonts/Shrikhand-Regular.ttf");
+  src: url("../../fonts/Shrikhand-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
+body {
+  margin: 0;
+}
+
 #bloc_page {
   width: 100%;
+}
+
+p {
+  font-family: Roboto;
+}
+
+.h1_index {
+  font-family: Roboto-bold;
+}
+
+h1 {
+  font-family: "Shrikhand";
+}
+
+img {
+  object-fit: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 10px 15px #cec8c8;
+}
+header p {
+  width: 50%;
+}
+header img {
+  width: 100%;
+}
+
+#loca {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #f0f1f2;
+  box-shadow: 0px 3px 15px #cec8c8 inset;
+}
+#loca span {
+  margin: 16px;
+}
+#loca p {
+  font-size: 1.15em;
+  margin-right: 35px;
+}
+
+#btn_exp {
+  margin-top: 16px;
+  border-radius: 50px;
+  border: none;
+  background: radial-gradient(ellipse at 0px 0px, #FF79DA 15%, #9356DC 100%);
+  box-shadow: 0px 10px 15px #cec8c8;
+  width: 50%;
+  height: 50px;
+  position: relative;
+  color: white;
+  font-family: Roboto;
+  font-size: 1.1em;
+  z-index: 1;
+}
+#btn_exp:hover::after {
+  opacity: 1;
+}
+#btn_exp::after {
+  content: "";
+  border-radius: 50px;
+  box-shadow: 0px 3px 15px #504747;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(ellipse at 50px 50px, #FF79DA 60%, #9356DC 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+
+#exploremain {
+  background: #f8f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+#exploremain h1 {
+  text-align: center;
+  margin: 0px 60px;
+}
+#exploremain p {
+  margin: 16px 60px;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */

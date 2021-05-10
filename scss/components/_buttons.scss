@@ -1,0 +1,33 @@
+#btn_exp{
+    margin-top: 16px;
+    border-radius: 50px;
+    border: none;
+    background: radial-gradient(ellipse at 0px 0px, $secondary-color 15%, $primary-color 100%);
+    @include home-shadow;
+    width: 50%;
+    height: 50px;
+    position: relative;
+    color: white;
+    font-family: Roboto;
+    font-size: 1.1em;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        border-radius: 50px;
+        box-shadow: 0px 3px 15px darken($color: #cec8c8, $amount: 50%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: radial-gradient(ellipse at 50px 50px, $secondary-color 60%, $primary-color 100%);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+}

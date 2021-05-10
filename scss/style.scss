@@ -1,4 +1,8 @@
 @import "./base/typography";
 @import "./base/base";
-
-
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layout/header";
+@import "./pages/loca";
+@import "./components/buttons";
+@import "./pages/exploremain";

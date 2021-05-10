@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: center;
+    @include home-shadow;
+    p {
+        width: 50%;
+    }
+    img {
+        width: 100%;
+    }
+}

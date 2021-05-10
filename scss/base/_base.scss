@@ -1,3 +1,23 @@
+body {
+    margin: 0;
+}
+
 #bloc_page {
     width: 100%;
+}
+
+p {
+    font-family: Roboto;
+}
+
+.h1_index{
+    font-family: Roboto-bold;
+}
+
+h1 {
+    font-family: "Shrikhand";
+}
+
+img {
+    object-fit: cover;
 }
