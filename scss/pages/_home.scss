@@ -25,6 +25,7 @@
     h1 {
         text-align: center;
         margin: 0px 60px;
+        font-size: $size;
     }
     p {
         margin: 16px 60px;
@@ -40,7 +41,7 @@
     h1 {
         margin-left: 20px;
         margin-top: 40px;
-        font-size: 2em;
+        font-size: $size;
     }
 }
 
@@ -88,4 +89,83 @@
     margin: 0px 30px 0px 50px;
     font-size: 1.5em;
     color: darken($color: #f0f1f2, $amount: 40);
+    width: 29px;
+}
+
+/* Restaurants section */ 
+#restaurant {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background: $lightness-color;
+    width: auto;
+    height: 1650px;
+    h1 {
+        margin: 70px 0px 25px 20px;
+        font-size: $size;
+    }
+}
+
+#container_rest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cards {
+        position: relative;
+        width: 90%;
+        border-radius: 20px;
+        color: white;
+        height: 340px;
+        margin-bottom: 24px;
+        @include home-shadow;
+        &:hover {
+            &.h2, .loca_rest {
+                color: $primary-color;
+            }
+        }
+        .new {
+            color: darken($color: $tertiary-color, $amount: 40);
+            font-family: Roboto-bold;
+            font-size: 1.2em;
+            line-height: 35px;
+            text-align: center;
+            position: absolute;
+            left: 310px;
+            top: 5px;
+            width: 25%;
+            height: 35px;
+            background: $tertiary-color;
+            border-radius: 5px;
+        }
+        .img {
+            margin: 0px;
+        }
+        img {
+            width: 100%;
+            height: 250px;
+            border-radius: 20px 20px 0px 0px;
+        }
+    }
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    position: relative;
+    h2 {
+        font-family: Roboto-bold;
+        font-size: 1.4em;
+        margin: 15px 0px 3px 15px;
+    }
+    .loca_rest {
+        font-size: 1.3em;
+        margin: 0px 0px 0px 15px;
+    }
+    .heart {
+        position: absolute;
+        left: 375px;
+        bottom: 18px;
+        font-size: 1.6em;
+    }
 }
