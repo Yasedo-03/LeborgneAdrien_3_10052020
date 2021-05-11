@@ -1,0 +1,91 @@
+/* localisation */ 
+#loca {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: lighten($color: $main-color, $amount: 25%);
+    box-shadow: 0px 3px 15px rgb(206, 200, 200) inset;
+    span {
+        margin: 16px;
+    }
+    p {
+        font-size: 1.15em;
+        margin-right: 35px;
+    }
+}
+
+/* section with button explore */ 
+#exploremain {
+    background: $lightness-color;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        margin: 0px 60px;
+    }
+    p {
+        margin: 16px 60px;
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+
+/* operation section */ 
+#operation {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        margin-left: 20px;
+        margin-top: 40px;
+        font-size: 2em;
+    }
+}
+
+#contain_ope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .btn_ope {
+        display: flex;
+        align-items: center;
+        background: $lightness-color;
+        margin-bottom: 25px;
+        border-radius: 20px;
+        @include home-shadow;
+        width: 83%;
+        height: 75px;
+        position: relative;
+        &:hover {
+            background: lighten($color: $primary-color, $amount: 35);
+            .icon_ope {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.btn_ope {
+    p {
+        font-size: 1.3em;
+        font-family: Roboto-bold;
+    }
+}
+
+.num {
+    position: absolute;
+    left: -12px;
+    background: $primary-color;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 9px;
+    font-size: 1.3em;
+}
+
+.icon_ope {
+    margin: 0px 30px 0px 50px;
+    font-size: 1.5em;
+    color: darken($color: #f0f1f2, $amount: 40);
+}

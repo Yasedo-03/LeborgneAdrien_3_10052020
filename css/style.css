@@ -43,7 +43,7 @@ img {
 header {
   display: flex;
   justify-content: center;
-  box-shadow: 0px 10px 15px #cec8c8;
+  box-shadow: 0px 5px 10px #cec8c8;
 }
 header p {
   width: 50%;
@@ -52,6 +52,7 @@ header img {
   width: 100%;
 }
 
+/* localisation */
 #loca {
   display: flex;
   justify-content: center;
@@ -67,12 +68,86 @@ header img {
   margin-right: 35px;
 }
 
+/* section with button explore */
+#exploremain {
+  background: #f8f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+#exploremain h1 {
+  text-align: center;
+  margin: 0px 60px;
+}
+#exploremain p {
+  margin: 16px 60px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* operation section */
+#operation {
+  display: flex;
+  flex-direction: column;
+}
+#operation h1 {
+  margin-left: 20px;
+  margin-top: 40px;
+  font-size: 2em;
+}
+
+#contain_ope {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contain_ope .btn_ope {
+  display: flex;
+  align-items: center;
+  background: #f8f9f9;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px #cec8c8;
+  width: 83%;
+  height: 75px;
+  position: relative;
+}
+#contain_ope .btn_ope:hover {
+  background: #f2eafb;
+}
+#contain_ope .btn_ope:hover .icon_ope {
+  color: #9356DC;
+}
+
+.btn_ope p {
+  font-size: 1.3em;
+  font-family: Roboto-bold;
+}
+
+.num {
+  position: absolute;
+  left: -12px;
+  background: #9356DC;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 9px;
+  font-size: 1.3em;
+}
+
+.icon_ope {
+  margin: 0px 30px 0px 50px;
+  font-size: 1.5em;
+  color: #838b93;
+}
+
 #btn_exp {
   margin-top: 16px;
   border-radius: 50px;
   border: none;
   background: radial-gradient(ellipse at 0px 0px, #FF79DA 15%, #9356DC 100%);
-  box-shadow: 0px 10px 15px #cec8c8;
+  box-shadow: 0px 5px 10px #cec8c8;
   width: 50%;
   height: 50px;
   position: relative;
@@ -97,24 +172,6 @@ header img {
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
-}
-
-#exploremain {
-  background: #f8f9f9;
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  align-items: center;
-  justify-content: center;
-}
-#exploremain h1 {
-  text-align: center;
-  margin: 0px 60px;
-}
-#exploremain p {
-  margin: 16px 60px;
-  text-align: center;
-  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
