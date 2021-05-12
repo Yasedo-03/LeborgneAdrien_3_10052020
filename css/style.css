@@ -21,7 +21,8 @@ body {
 }
 
 #bloc_page {
-  width: 100%;
+  width: auto;
+  margin: auto;
 }
 
 p {
@@ -48,13 +49,16 @@ a {
 header {
   display: flex;
   justify-content: center;
-  box-shadow: 0px 5px 10px #cec8c8;
+  position: relative;
 }
-header p {
-  width: 50%;
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
 }
-header img {
-  width: 100%;
+header #arrow {
+  position: absolute;
+  top: 45px;
+  left: 20px;
 }
 
 footer {
@@ -78,6 +82,11 @@ footer #logo_footer {
   font-family: Shrikhand;
   font-size: 1.5em;
   margin: 30px 0px 30px 20px;
+}
+
+/*home header */
+#hd_home {
+  box-shadow: 0px 5px 10px #cec8c8;
 }
 
 /* localisation */
@@ -241,13 +250,97 @@ footer #logo_footer {
   font-size: 1.3em;
   margin: 0px 0px 0px 15px;
 }
-.subtitle .heart {
+.subtitle .heart_home {
   position: absolute;
   left: 375px;
   bottom: 18px;
   font-size: 1.6em;
 }
 
+#bg_img {
+  position: relative;
+  width: auto;
+  height: 1620px;
+}
+#bg_img img {
+  width: 100%;
+  height: 350px;
+}
+
+#menu {
+  background: #f8f9f9;
+  position: absolute;
+  top: 280px;
+  width: 100%;
+  height: 1340px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+#title {
+  display: flex;
+}
+#title h1 {
+  margin-left: 20px;
+  margin-top: 30px;
+  font-size: 2.2em;
+}
+#title span {
+  margin: 40px 0px 0px 50px;
+  font-size: 1.8em;
+}
+
+.name_menu {
+  margin-left: 20px;
+  width: 10%;
+  height: 30px;
+  border-bottom: solid 4px #99E2D0;
+}
+.name_menu h2 {
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+.contain_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 17px;
+}
+.contain_menu .food {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-bottom: 17px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px #cec8c8;
+  width: 93%;
+  height: 75px;
+}
+.contain_menu .food h3 {
+  font-family: Roboto;
+  margin: 15px 0 0 15px;
+}
+.contain_menu .food_txt {
+  display: flex;
+}
+.contain_menu .food_txt p {
+  margin: 5px 0 0 15px;
+  width: 100%;
+}
+.contain_menu .food_txt span {
+  margin-right: 25px;
+  font-family: Roboto-bold;
+}
+
+#contain_order {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+/* button explore/home */
 #btn_exp {
   margin-top: 16px;
   border-radius: 50px;
@@ -278,6 +371,26 @@ footer #logo_footer {
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
+}
+
+/* button order/pages */
+#btn_order {
+  margin-top: 16px;
+  border-radius: 50px;
+  border: none;
+  background: radial-gradient(ellipse at 0px 0px, #FF79DA 15%, #9356DC 100%);
+  box-shadow: 0px 5px 10px #cec8c8;
+  width: 50%;
+  height: 50px;
+  color: white;
+  font-family: Roboto;
+  font-size: 1.1em;
+  z-index: 1;
+}
+#btn_order:hover {
+  opacity: 0.75;
+  transition: opacity 250ms;
+  box-shadow: 0px 5px 10px #aaa0a0;
 }
 
 /*# sourceMappingURL=style.css.map */

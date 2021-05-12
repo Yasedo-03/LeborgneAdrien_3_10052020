@@ -1,3 +1,4 @@
+ /* button explore/home */
 #btn_exp{
     margin-top: 16px;
     border-radius: 50px;
@@ -29,5 +30,25 @@
         opacity: 0;
         z-index: -1;
         transition: opacity 250ms;
+    }
+}
+
+/* button order/pages */ 
+#btn_order{
+    margin-top: 16px;
+    border-radius: 50px;
+    border: none;
+    background: radial-gradient(ellipse at 0px 0px, $secondary-color 15%, $primary-color 100%);
+    @include home-shadow;
+    width: 50%;
+    height: 50px;
+    color: white;
+    font-family: Roboto;
+    font-size: 1.1em;
+    z-index: 1;
+    &:hover {
+        opacity: 0.75;
+        transition: opacity 250ms;
+        @include shadow-dark;
     }
 }
