@@ -119,7 +119,7 @@
         position: relative;
         width: 90%;
         border-radius: 20px;
-        color: white;
+        background-color: white;
         height: 340px;
         margin-bottom: 24px;
         @include home-shadow;
@@ -166,11 +166,5 @@
     .loca_rest {
         font-size: 1.3em;
         margin: 0px 0px 0px 15px;
-    }
-    .heart_home {
-        position: absolute;
-        left: 375px;
-        bottom: 18px;
-        font-size: 1.6em;
     }
 }

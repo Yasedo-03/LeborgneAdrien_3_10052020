@@ -1,18 +1,23 @@
+/* color of the charter */
+/* main color for footer */
+/* backgroung light color */
+/* color of shadow */
+/* h1 text size */
 @font-face {
   font-family: "Roboto-bold";
-  src: url("../fonts/Roboto-Bold.ttf");
+  src: url("../../fonts/Roboto-Bold.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("../../fonts/Roboto-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("../fonts/Shrikhand-Regular.ttf");
+  src: url("../../fonts/Shrikhand-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -46,6 +51,8 @@ a {
   color: black;
 }
 
+/* property for all shadow */
+/* property for all shadow/hover */
 header {
   display: flex;
   justify-content: center;
@@ -67,12 +74,12 @@ footer {
   flex-direction: column;
   height: 250px;
 }
-footer p {
+footer a, footer p {
   color: white;
   margin: 0px 0px 8px 20px;
   font-size: 1.2em;
 }
-footer p span {
+footer a span, footer p span {
   display: inline-block;
   margin-right: 4px;
   width: 24px;
@@ -204,7 +211,7 @@ footer #logo_footer {
   position: relative;
   width: 90%;
   border-radius: 20px;
-  color: white;
+  background-color: white;
   height: 340px;
   margin-bottom: 24px;
   box-shadow: 0px 5px 10px #cec8c8;
@@ -250,12 +257,6 @@ footer #logo_footer {
   font-size: 1.3em;
   margin: 0px 0px 0px 15px;
 }
-.subtitle .heart_home {
-  position: absolute;
-  left: 375px;
-  bottom: 18px;
-  font-size: 1.6em;
-}
 
 #bg_img {
   position: relative;
@@ -267,12 +268,31 @@ footer #logo_footer {
   height: 350px;
 }
 
+#bg_big {
+  position: relative;
+  width: auto;
+  height: 1720px;
+}
+#bg_big img {
+  width: 100%;
+  height: 350px;
+}
+
 #menu {
   background: #f8f9f9;
   position: absolute;
   top: 280px;
   width: 100%;
   height: 1340px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+#menu_big {
+  background: #f8f9f9;
+  position: absolute;
+  top: 280px;
+  width: 100%;
+  height: 1440px;
   border-radius: 40px 40px 0px 0px;
 }
 
@@ -355,7 +375,7 @@ footer #logo_footer {
   font-size: 1.1em;
   z-index: 1;
 }
-#btn_exp:hover::after {
+#btn_exp:active::after {
   opacity: 1;
 }
 #btn_exp::after {
@@ -385,12 +405,55 @@ footer #logo_footer {
   color: white;
   font-family: Roboto;
   font-size: 1.1em;
-  z-index: 1;
 }
 #btn_order:hover {
   opacity: 0.75;
   transition: opacity 250ms;
   box-shadow: 0px 5px 10px #aaa0a0;
+}
+
+.btn_like {
+  position: relative;
+  top: -40px;
+  left: 375px;
+  bottom: 18px;
+  font-size: 1.6em;
+}
+.btn_like i {
+  position: absolute;
+  cursor: pointer;
+}
+.btn_like .far {
+  z-index: 1;
+}
+.btn_like .fas {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+}
+.btn_like .fas:hover:active {
+  opacity: 1;
+}
+.btn_like .fas:hover:active::after {
+  opacity: 1;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.btn_like .fas::after {
+  content: "";
+  position: absolute;
+  background-color: radial-gradient(ellipse at 0px 0px, #FF79DA 15%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 500ms;
 }
 
 /*# sourceMappingURL=style.css.map */

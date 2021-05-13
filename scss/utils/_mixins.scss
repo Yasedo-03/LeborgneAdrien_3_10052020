@@ -1,7 +1,9 @@
+/* property for all shadow */
 @mixin home-shadow {
     box-shadow: 0px 5px 10px rgb(206, 200, 200);
 }
 
+/* property for all shadow/hover */
 @mixin shadow-dark {
     box-shadow: 0px 5px 10px darken($color: #cec8c8, $amount: 15);
 }

@@ -1,0 +1,45 @@
+.btn_like {
+    position: relative;
+    top: -40px;
+    left: 375px;
+    bottom: 18px;
+    font-size: 1.6em;
+    i {
+        position: absolute;
+        cursor: pointer;
+    }
+    .far {
+        z-index: 1;
+    }
+    .fas {
+        position: relative;
+        z-index: 3;
+        opacity: 0;
+        &:hover:active {
+            opacity: 1;
+            &::after {
+                opacity: 1;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: radial-gradient(ellipse at 0px 0px, $secondary-color 15%, $primary-color 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            top: 50%;
+            right: 50%;
+            bottom: 50%;
+            left: 50%;  
+            opacity: 0;
+            transition: opacity 500ms;
+            
+        } 
+    }
+}
+
