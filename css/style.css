@@ -117,7 +117,7 @@ footer #logo_footer {
 @media screen and (min-width: 1400px) {
   footer #logo_footer {
     font-size: 2.3em;
-    margin: 25px 0px 0px 800px;
+    margin: 25px 0px 0px 45%;
   }
 }
 
@@ -361,9 +361,20 @@ footer #logo_footer {
   width: auto;
   height: 1620px;
 }
+@media screen and (min-width: 1400px) {
+  #bg_img {
+    height: 1770px;
+    margin-bottom: 35px;
+  }
+}
 #bg_img img {
   width: 100%;
   height: 350px;
+}
+@media screen and (min-width: 1400px) {
+  #bg_img img {
+    height: 500px;
+  }
 }
 
 #bg_big {
@@ -383,6 +394,12 @@ footer #logo_footer {
   width: 100%;
   height: 1340px;
   border-radius: 40px 40px 0px 0px;
+}
+@media screen and (min-width: 1400px) {
+  #menu {
+    margin-top: 150px;
+    border-radius: 40px;
+  }
 }
 
 #menu_big {
@@ -409,15 +426,28 @@ footer #logo_footer {
 
 .name_menu {
   margin-left: 20px;
-  width: 10%;
+  width: 45px;
   height: 30px;
   border-bottom: solid 4px #99E2D0;
+}
+@media screen and (min-width: 1400px) {
+  .name_menu {
+    width: 15%;
+    height: 40px;
+    margin-left: 42%;
+  }
 }
 .name_menu h2 {
   font-family: Roboto;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 1.2em;
+}
+@media screen and (min-width: 1400px) {
+  .name_menu h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
 }
 
 .contain_menu {
@@ -435,6 +465,11 @@ footer #logo_footer {
   box-shadow: 0px 5px 10px #cec8c8;
   width: 93%;
   height: 75px;
+}
+@media screen and (min-width: 800px) {
+  .contain_menu .food {
+    width: 80%;
+  }
 }
 .contain_menu .food h3 {
   font-family: Roboto;
@@ -491,10 +526,15 @@ footer #logo_footer {
 
 .heart {
   position: absolute;
-  right: 55px;
+  right: 60px;
   bottom: 60px;
   font-size: 1.6em;
   cursor: pointer;
+}
+@media screen and (min-width: 1400px) {
+  .heart {
+    font-size: 2.2em;
+  }
 }
 .heart:hover .empty {
   opacity: 0;
@@ -524,6 +564,16 @@ footer #logo_footer {
   bottom: 18px;
   font-size: 2em;
   cursor: pointer;
+}
+@media screen and (min-width: 800px) {
+  .heart_page {
+    right: -50%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .heart_page {
+    right: -62%;
+  }
 }
 .heart_page:hover .empty {
   opacity: 0;
