@@ -7,3 +7,17 @@
 @mixin shadow-dark {
     box-shadow: 0px 5px 10px darken($color: #cec8c8, $amount: 15);
 }
+
+/* mixin for responsive laptop/desktop */
+@mixin laptop {
+    @media screen and (min-width: map-get($breakpoints, laptop)) {
+        @content;
+    }
+} 
+
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+} 

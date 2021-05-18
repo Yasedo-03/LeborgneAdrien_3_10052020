@@ -3,9 +3,12 @@ body {
 }
 
 #bloc_page {
-    width: auto;
+    width: 100%;
     margin: auto;
-}
+    @include desktop {
+        width: 70%;
+    }
+}    
 
 p {
     font-family: Roboto;
