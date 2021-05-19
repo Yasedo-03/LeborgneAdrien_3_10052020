@@ -108,6 +108,9 @@ footer a span, footer p span {
   margin-right: 4px;
   width: 24px;
 }
+footer a:hover {
+  color: #9356DC;
+}
 footer #logo_footer {
   width: 100%;
   font-family: Shrikhand;
@@ -315,7 +318,7 @@ footer #logo_footer {
     width: 45%;
   }
 }
-#container_rest .cards:hover.h2, #container_rest .cards:hover .loca_rest {
+#container_rest .cards:hover h2, #container_rest .cards:hover .loca_rest {
   color: #9356DC;
 }
 #container_rest .cards .new {
@@ -413,8 +416,10 @@ footer #logo_footer {
 
 #title {
   display: flex;
+  position: relative;
 }
 #title h1 {
+  width: 70%;
   margin-left: 20px;
   margin-top: 30px;
   font-size: 2.2em;
@@ -457,34 +462,100 @@ footer #logo_footer {
   margin-top: 17px;
 }
 .contain_menu .food {
+  cursor: pointer;
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+  overflow: hidden;
   background: white;
   margin-bottom: 17px;
+  padding: -20px;
   border-radius: 20px;
   box-shadow: 0px 5px 10px #cec8c8;
   width: 93%;
   height: 75px;
+  /* Animation for card's apparition */
+  animation: apparition 1s ease-in-out forwards;
+  opacity: 0;
+}
+.contain_menu .food:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.contain_menu .food:nth-child(3) {
+  animation-delay: 0.4s;
 }
 @media screen and (min-width: 800px) {
   .contain_menu .food {
     width: 80%;
   }
 }
-.contain_menu .food h3 {
-  font-family: Roboto;
-  margin: 15px 0 0 15px;
+.contain_menu .food:hover .food_txt {
+  margin-right: -60px;
+  width: 60%;
+}
+.contain_menu .food:hover .price {
+  margin-right: 80px;
+}
+.contain_menu .food:hover h3, .contain_menu .food:hover p {
+  width: 100%;
+}
+.contain_menu .food:hover .checkbox {
+  transform: scaleX(1);
+}
+.contain_menu .food:hover .checkbox > i {
+  transform: rotate(360deg);
 }
 .contain_menu .food_txt {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+  width: 80%;
+  transition: margin 300ms, width 300ms;
 }
 .contain_menu .food_txt p {
-  margin: 5px 0 0 15px;
-  width: 100%;
+  margin: 5px 0 15px 15px;
+  width: 92%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.contain_menu .food_txt span {
-  margin-right: 25px;
+.contain_menu .food_txt h3 {
+  font-family: Roboto;
+  margin: 5px 0 0 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 92%;
+}
+.contain_menu .price {
+  margin-bottom: 15px;
+  margin-right: 20px;
   font-family: Roboto-bold;
+  transition: margin 300ms;
+}
+
+.checkbox {
+  height: 100%;
+  width: 70px;
+  position: absolute;
+  right: 0;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+.checkbox i {
+  font-size: 1.5em;
+  transition: transform 300ms ease-in-out;
+  transition-delay: 200ms;
 }
 
 #contain_order {
@@ -493,6 +564,14 @@ footer #logo_footer {
   justify-content: center;
 }
 
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* button explore/home and order/pages */
 #btn_main {
   margin-top: 16px;
@@ -526,7 +605,7 @@ footer #logo_footer {
 
 .heart {
   position: absolute;
-  right: 60px;
+  right: 10%;
   bottom: 60px;
   font-size: 1.6em;
   cursor: pointer;
@@ -558,22 +637,11 @@ footer #logo_footer {
 }
 
 .heart_page {
-  position: relative;
+  position: absolute;
   top: 38px;
-  right: -50px;
-  bottom: 18px;
+  right: 15%;
   font-size: 2em;
   cursor: pointer;
-}
-@media screen and (min-width: 800px) {
-  .heart_page {
-    right: -50%;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .heart_page {
-    right: -62%;
-  }
 }
 .heart_page:hover .empty {
   opacity: 0;
@@ -588,35 +656,6 @@ footer #logo_footer {
   position: absolute;
 }
 .heart_page .full {
-  position: absolute;
-  opacity: 0;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.heart_page3 {
-  position: relative;
-  top: 38px;
-  right: -125px;
-  bottom: 18px;
-  font-size: 2em;
-  cursor: pointer;
-}
-.heart_page3:hover .empty {
-  opacity: 0;
-  transition: opacity 600ms 150ms;
-}
-.heart_page3:hover .full {
-  opacity: 1;
-  animation: filling 600ms ease-in-out;
-  transform-origin: 50% center;
-}
-.heart_page3 .empty {
-  position: absolute;
-}
-.heart_page3 .full {
   position: absolute;
   opacity: 0;
   background-image: linear-gradient(#FF79DA, #9356DC);

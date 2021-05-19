@@ -1,6 +1,6 @@
 .heart {
     position: absolute;
-    right: 60px;
+    right: 10%;
     bottom: 60px;
     font-size: 1.6em;
     cursor: pointer;
@@ -30,45 +30,9 @@
 }
 
 .heart_page {
-    position: relative;
+    position: absolute;
     top: 38px;
-    right: -50px;
-    bottom: 18px;
-    font-size: 2em;
-    cursor: pointer;
-    @include laptop {
-        right: -50%;
-    }
-    @media screen and (min-width:1100px) {
-        right: -62%;
-    }
-    &:hover .empty {
-        opacity: 0;
-        transition: opacity 600ms 150ms;
-    }
-    &:hover .full {
-        opacity: 1;
-        animation: filling 600ms ease-in-out;
-        transform-origin: 50% center;
-    }
-    .empty {
-        position: absolute;
-    }
-    .full {
-        position: absolute;
-        opacity: 0;
-        background-image: linear-gradient(#FF79DA, #9356DC);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-}
-
-.heart_page3 {
-    position: relative;
-    top: 38px;
-    right: -125px;
-    bottom: 18px;
+    right: 15%;
     font-size: 2em;
     cursor: pointer;
     &:hover .empty {

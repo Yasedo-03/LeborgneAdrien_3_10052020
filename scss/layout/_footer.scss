@@ -23,6 +23,9 @@ footer {
             width: 24px;
         }
     }
+    a:hover {
+        color: $primary-color;
+    }
     #logo_footer {
         width: 100%;
         font-family: Shrikhand;
