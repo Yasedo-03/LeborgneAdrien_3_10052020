@@ -60,14 +60,15 @@
 }
 
 /* operation section */ 
+.h1_top {
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: $size;
+}
+
 #operation {
     display: flex;
     flex-direction: column;
-    h1 {
-        margin-left: 20px;
-        margin-top: 40px;
-        font-size: $size;
-    }
 }
 
 #contain_ope {

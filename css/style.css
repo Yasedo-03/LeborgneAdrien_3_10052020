@@ -323,14 +323,15 @@ footer #logo_footer {
 }
 
 /* operation section */
-#operation {
-  display: flex;
-  flex-direction: column;
-}
-#operation h1 {
+.h1_top {
   margin-left: 20px;
   margin-top: 40px;
   font-size: 2em;
+}
+
+#operation {
+  display: flex;
+  flex-direction: column;
 }
 
 #contain_ope {
@@ -598,7 +599,6 @@ footer #logo_footer {
   overflow: hidden;
   background: white;
   margin-bottom: 17px;
-  padding: -20px;
   border-radius: 20px;
   box-shadow: 0px 5px 10px #cec8c8;
   width: 93%;
