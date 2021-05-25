@@ -758,7 +758,6 @@ footer #logo_footer {
   position: absolute;
   opacity: 0;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -786,7 +785,6 @@ footer #logo_footer {
   position: absolute;
   opacity: 0;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
